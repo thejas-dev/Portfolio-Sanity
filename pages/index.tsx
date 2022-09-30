@@ -31,7 +31,7 @@ const Home = ({pageInfo,experiences,projects,skills,socials}: Props) =>{
     min-h-screen snap-y snap-mandatory overlflow-y-scroll overlflow-x-hidden z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
-        <title>{pageInfo?.name} Portfolio</title>
+        <title>{pageInfo?.name}</title>
       </Head>
 
       <Header socials = {socials} />
@@ -84,7 +84,7 @@ const Home = ({pageInfo,experiences,projects,skills,socials}: Props) =>{
 export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async() =>{
-    const pageInfo: PageInfo = await fetchPageInfo();
+    const pageInfo: PageInfo =await fetchPageInfo();
     const experiences: Experience[]  = await fetchExperiences();
     const skills: Skill[] = await fetchSkills();
     const projects: Project[] = await fetchProjects();
