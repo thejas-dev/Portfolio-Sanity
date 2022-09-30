@@ -8,6 +8,7 @@ type Props = {
 
 export default function ExperienceCard({experience}:Props) {
 	// body...
+	console.log(experience)
 	return(
 		<article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 
 		w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-5 opacity-40 hover:opacity-100 cursor-pointer transition-opacity
@@ -44,7 +45,7 @@ export default function ExperienceCard({experience}:Props) {
 				<p className="uppercase py-5 text-gray-300" >
 					{new Date(experience?.dateStarted).toDateString()} -{" "} {experience.isCurrentlyWorkingHere ?
 						"Present"
-						: new Date(experience?.dateEnd).toDateString()
+						: new Date(experience?.dateEnded).toDateString()
 					}
 				</p>
 
