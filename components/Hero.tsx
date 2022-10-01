@@ -40,18 +40,7 @@ export default function Hero({pageInfo}:Props) {
 
 				<h1 className="text-5xl lg:text-6xl font-semibold px-10" >	
 				<span className="mr-3" >
-					<Typewriter 
-					options={{
-						autoStart: true,
-						loop:true,
-						delay:60,
-						strings:[
-							"<Hi! Im ThejasHari/>",
-						 	"<Engineer/>",
-						 	"<Developer/>"
-						]
-					}}
-					/>
+					{text}
 				</span>
 				<Cursor cursorColor="#F7AB0A"/>
 				</h1>
