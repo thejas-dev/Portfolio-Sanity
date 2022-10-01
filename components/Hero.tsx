@@ -1,4 +1,5 @@
-import {Typewriter , Cursor} from 'react-simple-typewriter'
+import { Cursor} from 'react-simple-typewriter'
+import Typewriter from 'typewriter-effect'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 import {PageInfo} from '../typings';
@@ -40,13 +41,16 @@ export default function Hero({pageInfo}:Props) {
 				<h1 className="text-5xl lg:text-6xl font-semibold px-10" >	
 				<span className="mr-3" >
 					<Typewriter 
-						words={["<Hi! Im ThejasHari/>",
-						 		"<Engineer/>",
-						 		"<Developer/>",]}
-						loop = {true}
-						typeSpeed={70}
-						deleteSpeed={50}
-						delaySpeed={1000}
+					options={{
+						autoStart: true,
+						loop:true,
+						delay:60,
+						strings:[
+							"<Hi! Im ThejasHari/>",
+						 	"<Engineer/>",
+						 	"<Developer/>"
+						]
+					}}
 					/>
 				</span>
 				<Cursor cursorColor="#F7AB0A"/>

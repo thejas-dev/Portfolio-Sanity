@@ -17,7 +17,8 @@
     "react-dom": "^18.1.0",
     "react-hook-form": "^7.36.1",
     "react-simple-typewriter": "^4.0.2",
-    "react-social-icons": "^5.14.0"
+    "react-social-icons": "^5.14.0",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
