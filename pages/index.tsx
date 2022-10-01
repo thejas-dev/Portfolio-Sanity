@@ -31,7 +31,7 @@ const Home = ({pageInfo,experiences,projects,skills,socials}: Props) =>{
     min-h-screen snap-y snap-mandatory overlflow-y-scroll overlflow-x-hidden z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
-        <title>{pageInfo?.name}</title>
+        <title>{pageInfo?.name} - Portfolio </title>
       </Head>
 
       <Header socials = {socials} />
