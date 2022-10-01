@@ -8,19 +8,13 @@ import {urlFor} from '../sanity';
 type Props = {
 	pageInfo: PageInfo;
 }
+
+
+
 export default function Hero({pageInfo}:Props) {
 	// body...et text = ''
-	 //const text="Hello"
-	const [text, count] = useTypewriter({
-		words: [
-		`Hi Im ${pageInfo?.name}`,
-		"<Developer/>",
-		"<Gamer/>",
-		"<Engineer/>"
-		],
-		loop:true,
-		delaySpeed:2000,
-	})
+	const text="hello"
+	
 	
 	
 
