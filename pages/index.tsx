@@ -67,7 +67,7 @@ const Home = ({pageInfo,experiences,projects,skills,socials}: Props) =>{
     </section>
 
     <Link href='#hero' >
-      <footer className="sticky bottom-5 w-full cursor-pointer" >
+      <footer className="fixed z-20 bottom-5 w-full cursor-pointer" >
         <div className="flex items-center justify-center" >
           <img 
           className="rounded-full h-10 w-10 filter transition-all duration-400 ease-in-out grayscale hover:grayscale-0 cursor-pointer"
