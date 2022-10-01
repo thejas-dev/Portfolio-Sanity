@@ -1,6 +1,5 @@
-import { useTypewriter, Cursor} from 'react-simple-typewriter'
+import {Typewriter , Cursor} from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
-import {useEffect} from 'react';
 import Link from 'next/link'
 import {PageInfo} from '../typings';
 import {urlFor} from '../sanity';
@@ -23,7 +22,7 @@ export default function Hero({pageInfo}:Props) {
 	// 	loop: true,
 	// })
 	
-	
+	//{text !== undefined ? text : ""}
 
 	return( 
 		<div className="min-h-screen flex flex-col space-y-8 items-center justify-center text-center
@@ -39,7 +38,17 @@ export default function Hero({pageInfo}:Props) {
 				</h2>
 
 				<h1 className="text-5xl lg:text-6xl font-semibold px-10" >	
-				<span className="mr-3" >{text !== undefined ? text : ""}</span>
+				<span className="mr-3" >
+					<Typewriter 
+						words={["<Hi! Im ThejasHari/>",
+						 		"<Engineer/>",
+						 		"<Developer/>",]}
+						loop = {true}
+						typeSpeed={70}
+						deleteSpeed={50}
+						delaySpeed={1000}
+					/>
+				</span>
 				<Cursor cursorColor="#F7AB0A"/>
 				</h1>
 				<div className="pt-5" >
