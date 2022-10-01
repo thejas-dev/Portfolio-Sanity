@@ -2,25 +2,25 @@ import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import {useEffect} from 'react';
 import Link from 'next/link'
-import PageInfo from '../typings';
+import {PageInfo} from '../typings';
 import {urlFor} from '../sanity';
 
 type Props = {
-	pageInfo: PageInfo
+	pageInfo: PageInfo;
 }
 export default function Hero({pageInfo}:Props) {
 	// body...et text = ''
-	 const text="hello"
-	// const [text, count] = useTypewriter({
-	// 	words: [
-	// 	`Hi Im ${pageInfo?.name}`,
-	// 	"<Developer/>",
-	// 	"<Gamer/>",
-	// 	"<Engineer/>"
-	// 	],
-	// 	loop:true,
-	// 	delaySpeed:2000,
-	// })
+	 //const text="Hello"
+	const [text, count] = useTypewriter({
+		words: [
+		`Hi Im ${pageInfo?.name}`,
+		"<Developer/>",
+		"<Gamer/>",
+		"<Engineer/>"
+		],
+		loop:true,
+		delaySpeed:2000,
+	})
 	
 	
 
