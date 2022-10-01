@@ -1,7 +1,8 @@
-import { Cursor} from 'react-simple-typewriter'
-import Typewriter from 'typewriter-effect'
+import {useTypewriter, Cursor} from 'react-simple-typewriter'
+// import Typewriter from 'typewriter-effect'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
+import {useEffect} from 'react'
 import {PageInfo} from '../typings';
 import {urlFor} from '../sanity';
 
@@ -14,14 +15,13 @@ type Props = {
 export default function Hero({pageInfo}:Props) {
 	// body...et text = ''
 	const text = "<ThejasHari/>"
-	// const[text,count] = useTypewriter({
-	// 	words:[
-	// 		"<Hi! Im ThejasHari/>",
-	// 		"<Engineer/>",
-	// 		"<Developer/>",
-	// 	],
+	// const [text]= useTypewriter({
+	// 	words: ['<ThejasHari/>','<Engineer/>','<Developer/>'],
 	// 	loop: true,
+	// 	delaySpeed: 2000,	
 	// })
+	
+	
 	
 	//{text !== undefined ? text : ""}
 
@@ -38,11 +38,11 @@ export default function Hero({pageInfo}:Props) {
 					{pageInfo?.role}
 				</h2>
 
-				<h1 className="text-5xl lg:text-6xl font-semibold px-10" >	
-				<span className="mr-3" >
-					{text}
-				</span>
-				<Cursor cursorColor="#F7AB0A"/>
+				<h1 className="text-5xl mt-2 lg:text-6xl font-semibold px-10" >	
+					<span className="mr-3 animate-pulse" >
+						{text}
+					</span>
+					<Cursor cursorColor="#F7AB0A"/>
 				</h1>
 				<div className="pt-5" >
 					<Link href="#about" >
