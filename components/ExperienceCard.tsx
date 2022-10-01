@@ -45,7 +45,7 @@ export default function ExperienceCard({experience}:Props) {
 				<p className="uppercase py-5 text-gray-300" >
 					{new Date(experience?.dateStarted).toDateString()} -{" "} {experience.isCurrentlyWorkingHere ?
 						"Present"
-						: new Date(experience?.dateEnded).toDateString()
+						: new Date(experience?.dateEnd).toDateString()
 					}
 				</p>
 
