@@ -1,6 +1,6 @@
 # Portfolio
 
-[Portfolio](https://thejas-portfolio.vercel.app)
+[Portfolio](https://portfolio-thejas-v2.vercel.app)
 
 This Simple Portfolio is made with Next JS and Bootstrapped With Sanity.io 
 
