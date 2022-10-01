@@ -13,8 +13,14 @@ type Props = {
 
 export default function Hero({pageInfo}:Props) {
 	// body...et text = ''
-	const text="hello"
 	
+	const[text,count] = useTypewriter({
+		words:[
+			"<Hi! Im ThejasHari/>",
+			"<Engineer/>",
+			"<Developer/>",
+		]
+	})
 	
 	
 
