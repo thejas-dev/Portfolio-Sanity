@@ -10,7 +10,7 @@ const query = groq`
 	}
 `
 
-type data = {
+type Data = {
 	projects: Project[]
 }
 export default async function handler(
